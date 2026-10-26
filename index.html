@@ -18,6 +18,9 @@
 @media(max-width:360px){.overview{padding-inline:19px}.eyebrow{font-size:11px}.topic-label{font-size:11px}.topic-link{padding-inline:3px}.facts{grid-template-columns:1fr;gap:10px}.facts div{display:grid;grid-template-columns:48px minmax(0,1fr);gap:8px}.facts dt{margin:0;padding-top:3px}.share-button span{display:none}.section-note{max-width:190px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 @media print{body{background:#fff}.wrap{width:100%;max-width:none}.overview{margin-top:0}.share-button,.text-button,.round-arrow,.skip-link{display:none}.policy,.review,.overview{break-inside:avoid}.policy summary{display:none}.site-footer{padding-bottom:0}}
+.opinions{margin:0 24px 22px;padding-top:16px;border-top:1px solid var(--line)}.opinions p{display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;min-height:47px;margin:0;color:#4d5357;font-size:13px;line-height:1.8;letter-spacing:-.025em}.opinions p+p{margin-top:10px}.opinions strong{padding-top:1px;color:var(--ink);font-size:11px;font-weight:700;white-space:nowrap}
+@media(min-width:721px) and (max-width:900px){.opinions{margin-inline:18px}.opinions p{min-height:70px}}
+@media(max-width:720px){.opinions{margin:0 22px 22px;padding-top:15px}.opinions p{min-height:0}.opinions p+p{margin-top:13px}}
 
 </style>
   
@@ -40,7 +43,7 @@
     <section id="questions" class="decision-section" aria-labelledby="question-title">
       <div class="decision-heading"><h2 id="question-title">이 계획대로 할까요?</h2><button class="share-button" id="share" type="button" aria-label="이 페이지 주소 복사"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 13 4-4M8 16l-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 2 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0" transform="translate(1 0)"/></svg><span>주소 복사</span></button><span class="sr-only" id="share-status" role="status"></span></div>
       <div class="decision-guide" aria-label="찬성·반대의 뜻"><p><strong>찬성</strong>이 내용과 예산으로 하자.</p><p><strong>반대</strong>이 계획대로 하지는 말자.</p></div>
-      <div class="section-bar"><p class="section-note">공약을 쉽게 풀어쓴 질문 · 추진 계획 기준</p><button id="expand-all" class="text-button" type="button" aria-expanded="false" aria-controls="policy-1 policy-2 policy-3">모두 펼치기 <span aria-hidden="true">+</span></button></div>
+      <div class="section-bar"><p class="section-note">추진 계획 요약 · 찬반 의견은 예시</p><button id="expand-all" class="text-button" type="button" aria-expanded="false" aria-controls="policy-1 policy-2 policy-3">모두 펼치기 <span aria-hidden="true">+</span></button></div>
 
       <section class="policies" aria-label="세 가지 공약의 찬반 질문">
         <article class="policy" id="policy-card-1">
@@ -48,6 +51,7 @@
           <h3>시민이 정책을 함께 정할 규칙을 만들까요?</h3>
           <p class="plain-summary">시민 의견을 듣고 반영하는 절차를 정해요.</p>
           <dl class="facts"><div><dt>예산</dt><dd>별도 사업예산 없음<small>원문: 비예산</small></dd></div><div><dt>기간</dt><dd>2026.10 ~ 2029.12</dd></div></dl>
+          <div class="opinions" aria-label="시민참여 찬반 의견 예시"><p><strong>찬성</strong><span>시민이 동네 일을 함께 정할 수 있어요.</span></p><p><strong>반대</strong><span>새 규칙보다 지금 있는 참여 방법부터 잘 써야 해요.</span></p></div>
           <details id="policy-1"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민참여의 약속과 규칙인 <b>헌장·조례</b>를 만들어요.</li><li><b>27개 시·구·군</b>이 쓸 같은 기준을 마련해요.</li><li>시민 설문 결과를 공개하고 정책을 고쳐요.</li></ul><p class="milestone"><span>2027.7 예정</span>헌장·조례·기본계획 마련</p><p class="source">원문 65~68쪽 · 시민주권정책과</p></div></details>
         </article>
         <article class="policy" id="policy-card-2">
@@ -55,6 +59,7 @@
           <h3>인권을 지킬 위원회·센터 등을 만들까요?</h3>
           <p class="plain-summary">차별을 막고 피해자를 돕도록, 정책도 미리 살펴요.</p>
           <dl class="facts"><div><dt>예산</dt><dd>약 53억 원<small>52억 6,810만 원 · 시비</small></dd></div><div><dt>주요 일정</dt><dd>인권헌장 2028.12 예정</dd></div></dl>
+          <div class="opinions" aria-label="인권 찬반 의견 예시"><p><strong>찬성</strong><span>차별을 당한 사람이 도움받을 곳이 생겨요.</span></p><p><strong>반대</strong><span>비슷한 곳과 일이 겹치면 돈을 낭비할 수 있어요.</span></p></div>
           <details id="policy-2"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li><b>인권위원회</b>를 만들고 인권을 지킬 약속을 정해요.</li><li>정책과 예산이 사람의 권리를 해치는지 미리 살펴요.</li><li><b>인권지원센터</b>를 두고 교육 등을 지원해요.</li></ul><p class="milestone"><span>2030.1 예정</span>인권위원회 출범</p><p class="source">원문 69~73쪽 · 인권평화과</p></div></details>
         </article>
         <article class="policy" id="policy-card-3">
@@ -62,6 +67,7 @@
           <h3>AI 서비스와 통합 앱을 만들까요?</h3>
           <p class="plain-summary">예약·시민 제안 등 여러 서비스를 한곳에 모아요.</p>
           <dl class="facts"><div><dt>예산안</dt><dd>182억 원<small>국비 58 · 시비 24 · 민자 100억</small></dd></div><div><dt>기간</dt><dd>2026.7 ~ 2030.6</dd></div></dl>
+          <div class="opinions" aria-label="통합 앱 찬반 의견 예시"><p><strong>찬성</strong><span>예약과 시민 제안을 한곳에서 하면 편해요.</span></p><p><strong>반대</strong><span>돈을 많이 들여도 사람들이 안 쓰면 낭비예요.</span></p></div>
           <details id="policy-3"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민이 <b>제안·평가</b>에 참여하는 AI 서비스를 만들어요.</li><li>여러 행정 서비스를 <b>통합 앱</b>으로 묶어요.</li><li>사업비는 AI 플랫폼 <b>72억</b>, 통합 앱 <b>110억</b>이에요.</li></ul><p class="milestone"><span>검토 중</span>데이터 수익을 시민에게 나누는 방식</p><p class="source">원문 74~76쪽 · AI행정담당관</p></div></details>
         </article>
       </section>
