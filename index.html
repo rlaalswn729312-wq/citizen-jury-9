@@ -21,9 +21,9 @@
 .opinions{margin:0 24px 22px;padding-top:16px;border-top:1px solid var(--line)}.opinions p{display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;min-height:47px;margin:0;color:#4d5357;font-size:13px;line-height:1.8;letter-spacing:-.025em}.opinions p+p{margin-top:10px}.opinions strong{padding-top:1px;color:var(--ink);font-size:11px;font-weight:700;white-space:nowrap}
 @media(min-width:721px) and (max-width:900px){.opinions{margin-inline:18px}.opinions p{min-height:70px}}
 @media(max-width:720px){.opinions{margin:0 22px 22px;padding-top:15px}.opinions p{min-height:0}.opinions p+p{margin-top:13px}}
-.official{margin:0 24px 22px;padding-top:18px;border-top:1px solid var(--line)}.official h4{margin:0 0 12px;font-size:13px;line-height:1.5;letter-spacing:-.025em}.official ul{display:grid;gap:10px;min-height:150px;padding-left:15px;margin:0 0 18px;font-size:12px;line-height:1.8;letter-spacing:-.025em}.official li::marker{color:#9aa0a4}.contact{padding:15px 16px;background:#f7f8f8;border-radius:8px}.contact p{margin:0}.contact .contact-dept{margin-bottom:10px;color:#737a7e;font-size:10px}.contact p+p{margin-top:10px}.contact p>span{display:block;margin-bottom:2px;font-size:10px;color:#697176}.contact p>a{display:inline-block;padding-block:3px;text-decoration:none;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}.contact p>a:hover{text-decoration:underline;text-underline-offset:3px}.contact small{display:block;margin-top:6px;font-size:10px;color:#737a7e}.contact .contact-source{display:inline-block;margin-top:12px;padding-block:3px;font-size:10px;text-decoration:underline;text-underline-offset:3px;color:#737a7e}.call-script{margin:11px 0 0;font-size:14px;line-height:1.8}.contact-note{margin:9px 0 0;font-size:10px;color:#858d92}
-@media(min-width:721px) and (max-width:900px){.official{margin-inline:18px}.official ul{min-height:195px}.contact{padding-inline:12px}.contact p>a{font-size:14px}}
-@media(max-width:720px){.official{margin-inline:22px;padding-top:17px}.official h4{font-size:14px}.official ul{min-height:0;font-size:13px;gap:9px}.contact{padding:15px 16px}.contact p>a{font-size:17px;padding-block:5px}.contact p>span,.contact .contact-dept{font-size:11px}.contact .contact-source{font-size:11px;min-height:32px}.call-script{font-size:13px}}
+.official{margin:0 24px 22px;padding-top:18px;border-top:1px solid var(--line)}.official h4{margin:0 0 12px;font-size:13px;line-height:1.5;letter-spacing:-.025em}.official ol{display:grid;gap:16px;padding-left:20px;margin:0 0 22px;font-size:13px;line-height:1.9;letter-spacing:-.025em}.official li{padding-left:3px}.official strong{font-weight:650}.official li::marker{color:#777d82;font-weight:650;font-variant-numeric:tabular-nums}.contact{padding:15px 16px;background:#f7f8f8;border-radius:8px}.contact p{margin:0}.contact .contact-dept{margin-bottom:10px;color:#737a7e;font-size:10px}.contact p+p{margin-top:10px}.contact p>span{display:block;margin-bottom:2px;font-size:10px;color:#697176}.contact p>a{display:inline-block;padding-block:3px;text-decoration:none;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}.contact p>a:hover{text-decoration:underline;text-underline-offset:3px}.contact small{display:block;margin-top:6px;font-size:10px;color:#737a7e}.contact .contact-source{display:inline-block;margin-top:12px;padding-block:3px;font-size:10px;text-decoration:underline;text-underline-offset:3px;color:#737a7e}.call-script{margin:11px 0 0;font-size:14px;line-height:1.8}.contact-note{margin:9px 0 0;font-size:10px;color:#858d92}
+@media(min-width:721px) and (max-width:900px){.official{margin-inline:18px}.official ol{padding-left:18px}.contact{padding-inline:12px}.contact p>a{font-size:14px}}
+@media(max-width:720px){.official{margin-inline:22px;padding-top:17px}.official h4{font-size:14px}.official ol{font-size:14px;gap:16px}.contact{padding:15px 16px}.contact p>a{font-size:17px;padding-block:5px}.contact p>span,.contact .contact-dept{font-size:11px}.contact .contact-source{font-size:11px;min-height:32px}.call-script{font-size:13px}}
 </style>
   
 </head>
@@ -56,7 +56,13 @@
           <div class="opinions" aria-label="시민참여 찬반 의견 예시"><p><strong>찬성</strong><span>시민이 동네 일을 함께 정할 수 있어요.</span></p><p><strong>반대</strong><span>새 규칙보다 지금 있는 참여 방법부터 잘 써야 해요.</span></p></div>
           <section class="official" aria-labelledby="ask-1">
             <h4 id="ask-1">담당자에게 물어보기</h4>
-            <ul><li>시민이 정한 내용을 시가 꼭 따르나요?</li><li>누구나 참여할 수 있나요?</li><li>지금 있는 참여 제도와 뭐가 다른가요?</li></ul>
+            <ol aria-label="시민참여 담당자 질문 5개">
+              <li><strong>비예산 사업이라고 했는데, 플랫폼 구축·설문조사·시민교육에 드는 비용은 어디서 마련하나요?</strong></li>
+              <li>시민 제안이 채택되면 <strong>담당 부서·완료 예정일·진행 상황</strong>을 시민이 확인할 수 있나요?</li>
+              <li>회의에 자주 참여하는 사람들에게 의견이 치우치지 않도록, 다양한 시민의 의견을 어떻게 고르게 듣나요?</li>
+              <li>시민들 사이에서 의견이 크게 갈리면, 어떤 절차와 기준으로 최종안을 정하나요?</li>
+              <li>조례를 만들거나 회의를 개최한 실적 외에, <strong>시민 의견이 실제 정책을 얼마나 바꿨는지</strong> 무엇으로 평가하나요?</li>
+            </ol>
             <div class="contact"><p class="contact-dept">시민주권정책과</p><p><span>종합계획 담당</span><a href="tel:0612863221">061-286-3221</a></p><p><span>위원회·안건 담당</span><a href="tel:0612863222">061-286-3222</a></p><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130876&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
           </section>
           <details id="policy-1"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민참여의 약속과 규칙인 <b>헌장·조례</b>를 만들어요.</li><li><b>27개 시·구·군</b>이 쓸 같은 기준을 마련해요.</li><li>시민 설문 결과를 공개하고 정책을 고쳐요.</li></ul><p class="milestone"><span>2027.7 예정</span>헌장·조례·기본계획 마련</p><p class="source">원문 65~68쪽 · 시민주권정책과</p></div></details>
@@ -69,7 +75,13 @@
           <div class="opinions" aria-label="인권 찬반 의견 예시"><p><strong>찬성</strong><span>차별을 당한 사람이 도움받을 곳이 생겨요.</span></p><p><strong>반대</strong><span>비슷한 곳과 일이 겹치면 돈을 낭비할 수 있어요.</span></p></div>
           <section class="official" aria-labelledby="ask-2">
             <h4 id="ask-2">담당자에게 물어보기</h4>
-            <ul><li>약 53억 원을 어디에 얼마씩 쓰나요?</li><li>기존 인권기관과 일이 겹치지 않나요?</li><li>위원회는 2029년, 2030년 중 언제 시작하나요?</li></ul>
+            <ol aria-label="인권 담당자 질문 5개">
+              <li><strong>인권위원회에 어떤 조사·조치 권한을 줄 계획이며, 해당 부서는 그 조치를 어디까지 따라야 하나요?</strong></li>
+              <li>시청이나 산하기관이 신고 대상이 돼도, 위원회가 독립적으로 조사하고 판단할 수 있는 장치가 있나요?</li>
+              <li>시민이 피해를 신고하면 어떤 절차로 처리되고, 결과를 받기까지의 목표 기간은 얼마인가요?</li>
+              <li><strong>인권인지예산제에서 문제가 발견되면 실제 사업이나 예산을 어떻게 바꿀 계획인가요?</strong> 예상 적용 사례를 하나 설명해 주실 수 있나요?</li>
+              <li>센터에서 멀리 떨어진 시·군이나 농어촌에 사는 시민도 같은 수준으로 도움받을 수 있나요?</li>
+            </ol>
             <div class="contact"><p class="contact-dept">인권평화과</p><p><span>위원회·조례·헌장 담당</span><a href="tel:0626134191">062-613-4191</a></p><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130046&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
           </section>
           <details id="policy-2"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li><b>인권위원회</b>를 만들고 인권을 지킬 약속을 정해요.</li><li>정책과 예산이 사람의 권리를 해치는지 미리 살펴요.</li><li><b>인권지원센터</b>를 두고 교육 등을 지원해요.</li></ul><p class="milestone"><span>2030.1 예정</span>인권위원회 출범</p><p class="source">원문 69~73쪽 · 인권평화과</p></div></details>
@@ -82,7 +94,13 @@
           <div class="opinions" aria-label="통합 앱 찬반 의견 예시"><p><strong>찬성</strong><span>예약과 시민 제안을 한곳에서 하면 편해요.</span></p><p><strong>반대</strong><span>돈을 많이 들여도 사람들이 안 쓰면 낭비예요.</span></p></div>
           <section class="official" aria-labelledby="ask-3">
             <h4 id="ask-3">담당자에게 물어보기</h4>
-            <ul><li>182억 원을 어디에 얼마씩 쓰나요?</li><li>민간 돈 100억 원을 못 구하면 어떻게 하나요?</li><li>스마트폰이 없어도 이용할 수 있나요?</li></ul>
+            <ol aria-label="통합 앱 담당자 질문 5개">
+              <li><strong>‘모두의 AI’와 ‘슈퍼앱’은 각각 무슨 기능을 맡고, 시민은 두 서비스를 어떻게 이용하게 되나요?</strong></li>
+              <li><strong>개발비 외에 매년 유지·보수와 운영에 드는 비용은 얼마이며, 누가 부담하나요?</strong></li>
+              <li>어떤 개인정보와 이용기록을 수집하나요? 추가적인 데이터 활용에 동의하지 않아도 기본 서비스를 이용할 수 있나요?</li>
+              <li>검토 중인 <strong>데이터 배당은 어떤 수익을 재원으로, 누구에게 어떤 기준으로 지급하려는 건가요?</strong></li>
+              <li>참여한 민간기업이 사업에서 빠지거나 계약이 끝나도, 시가 서비스와 데이터를 계속 관리할 수 있나요?</li>
+            </ol>
             <div class="contact"><p class="contact-dept">AI행정담당관</p><p><span>AI행정개발팀장 · 연결 문의</span><a href="tel:0626136220">062-613-6220</a></p><small>통합 앱 전담 번호는 미확인</small><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130937&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
           </section>
           <details id="policy-3"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민이 <b>제안·평가</b>에 참여하는 AI 서비스를 만들어요.</li><li>여러 행정 서비스를 <b>통합 앱</b>으로 묶어요.</li><li>사업비는 AI 플랫폼 <b>72억</b>, 통합 앱 <b>110억</b>이에요.</li></ul><p class="milestone"><span>검토 중</span>데이터 수익을 시민에게 나누는 방식</p><p class="source">원문 74~76쪽 · AI행정담당관</p></div></details>
