@@ -24,6 +24,9 @@
 .official{margin:0 24px 22px;padding-top:18px;border-top:1px solid var(--line)}.official h4{margin:0 0 12px;font-size:13px;line-height:1.5;letter-spacing:-.025em}.official ol{display:grid;gap:16px;padding-left:20px;margin:0 0 22px;font-size:13px;line-height:1.9;letter-spacing:-.025em}.official li{padding-left:3px}.official strong{font-weight:650}.official li::marker{color:#777d82;font-weight:650;font-variant-numeric:tabular-nums}.contact{padding:15px 16px;background:#f7f8f8;border-radius:8px}.contact p{margin:0}.contact .contact-dept{margin-bottom:10px;color:#737a7e;font-size:10px}.contact p+p{margin-top:10px}.contact p>span{display:block;margin-bottom:2px;font-size:10px;color:#697176}.contact p>a{display:inline-block;padding-block:3px;text-decoration:none;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}.contact p>a:hover{text-decoration:underline;text-underline-offset:3px}.contact small{display:block;margin-top:6px;font-size:10px;color:#737a7e}.contact .contact-source{display:inline-block;margin-top:12px;padding-block:3px;font-size:10px;text-decoration:underline;text-underline-offset:3px;color:#737a7e}.call-script{margin:11px 0 0;font-size:14px;line-height:1.8}.contact-note{margin:9px 0 0;font-size:10px;color:#858d92}
 @media(min-width:721px) and (max-width:900px){.official{margin-inline:18px}.official ol{padding-left:18px}.contact{padding-inline:12px}.contact p>a{font-size:14px}}
 @media(max-width:720px){.official{margin-inline:22px;padding-top:17px}.official h4{font-size:14px}.official ol{font-size:14px;gap:16px}.contact{padding:15px 16px}.contact p>a{font-size:17px;padding-block:5px}.contact p>span,.contact .contact-dept{font-size:11px}.contact .contact-source{font-size:11px;min-height:32px}.call-script{font-size:13px}}
+.inquiry-title{margin:0 0 14px;font-size:12px;font-weight:650;line-height:1.8}.inquiry-title>span{display:block;margin-bottom:3px;color:#777d82;font-size:10px;font-weight:500}.inquiry-message>p{margin:0 0 18px;color:#626a6f;font-size:12px;line-height:1.9}.inquiry-message ol{margin-bottom:18px}.contact .contact-name{display:block;font-size:14px;font-weight:700}.contact p>a[href^="mailto:"]{max-width:100%;font-size:12px;font-weight:550;letter-spacing:0;overflow-wrap:anywhere;word-break:break-all}.copy-inquiry{width:100%;min-height:42px;margin-top:12px;padding:9px 12px;border:1px solid #dfe3e4;border-radius:7px;background:#fff;color:#454d52;font-size:12px;font-weight:600}.copy-inquiry:hover{background:#f1f3f3}.inquiry-status{display:block;color:#626a6f;font-size:11px;line-height:1.7}.inquiry-status:not(:empty){margin-top:8px}
+@media(max-width:720px){.inquiry-title{font-size:13px}.inquiry-message>p{font-size:13px}.contact .contact-name{font-size:16px}.contact p>a[href^="mailto:"]{font-size:14px}.copy-inquiry{font-size:13px}}
+@media print{.copy-inquiry,.inquiry-status{display:none}}
 </style>
   
 </head>
@@ -55,15 +58,32 @@
           <dl class="facts"><div><dt>예산</dt><dd>별도 사업예산 없음<small>원문: 비예산</small></dd></div><div><dt>기간</dt><dd>2026.10 ~ 2029.12</dd></div></dl>
           <div class="opinions" aria-label="시민참여 찬반 의견 예시"><p><strong>찬성</strong><span>시민이 동네 일을 함께 정할 수 있어요.</span></p><p><strong>반대</strong><span>새 규칙보다 지금 있는 참여 방법부터 잘 써야 해요.</span></p></div>
           <section class="official" aria-labelledby="ask-1">
-            <h4 id="ask-1">담당자에게 물어보기</h4>
-            <ol aria-label="시민참여 담당자 질문 5개">
-              <li><strong>비예산 사업이라고 했는데, 플랫폼 구축·설문조사·시민교육에 드는 비용은 어디서 마련하나요?</strong></li>
-              <li>시민 제안이 채택되면 <strong>담당 부서·완료 예정일·진행 상황</strong>을 시민이 확인할 수 있나요?</li>
-              <li>회의에 자주 참여하는 사람들에게 의견이 치우치지 않도록, 다양한 시민의 의견을 어떻게 고르게 듣나요?</li>
-              <li>시민들 사이에서 의견이 크게 갈리면, 어떤 절차와 기준으로 최종안을 정하나요?</li>
-              <li>조례를 만들거나 회의를 개최한 실적 외에, <strong>시민 의견이 실제 정책을 얼마나 바꿨는지</strong> 무엇으로 평가하나요?</li>
-            </ol>
-            <div class="contact"><p class="contact-dept">시민주권정책과</p><p><span>종합계획 담당</span><a href="tel:0612863221">061-286-3221</a></p><p><span>위원회·안건 담당</span><a href="tel:0612863222">061-286-3222</a></p><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130876&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
+            <h4 id="ask-1">담당자에게 문의하기</h4>
+            <div class="inquiry-letter" id="inquiry-1">
+              <p class="inquiry-title"><span>제목</span><strong class="inquiry-subject">「시민주권정부 실현을 위한 제도 기반 구축」 공약 관련 질의</strong></p>
+              <div class="inquiry-message">
+                <p>안녕하세요.<br>2026년 공약평가 시민배심원단 7분임 김민주입니다.</p>
+                <p>공약 검토와 관련해 아래 사항을 문의드립니다.</p>
+                <ol aria-label="시민참여 담당자 질문 5개">
+                  <li>시민 의견의 반영 여부는 누가 결정하며, 반영하지 않을 경우 그 이유를 시민에게 안내하나요?</li>
+                  <li>기존 주민참여예산·주민자치회와 비교해 새롭게 도입되는 제도는 무엇인가요?</li>
+                  <li>참여 시민의 모집 방식과 선정 기준은 무엇인가요?</li>
+                  <li>비예산 사업으로 기재돼 있는데, 운영에 필요한 비용은 어떻게 마련하나요?</li>
+                  <li>이 공약은 구체적으로 무엇을 완료해야 ‘이행 완료’로 평가하나요?</li>
+                </ol>
+                <p>분임토론에 참고할 수 있도록 항목별로 간단히 답변 부탁드립니다.</p>
+                <p>감사합니다.<br>김민주 드림</p>
+              </div>
+            </div>
+            <div class="contact">
+              <p class="contact-dept">시민주권정책과</p>
+              <p><span>담당자</span><strong class="contact-name">문석경 주무관</strong></p>
+              <p><span>전화</span><a href="tel:0612863222">061-286-3222</a></p>
+              <p><span>이메일</span><a href="mailto:kyeong11022@korea.kr">kyeong11022@korea.kr</a></p>
+              <button class="copy-inquiry" type="button" aria-controls="inquiry-1">문의문 복사</button>
+              <span class="inquiry-status" role="status"></span>
+              <a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130876&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">부서 안내 ↗</a>
+            </div>
           </section>
           <details id="policy-1"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민참여의 약속과 규칙인 <b>헌장·조례</b>를 만들어요.</li><li><b>27개 시·구·군</b>이 쓸 같은 기준을 마련해요.</li><li>시민 설문 결과를 공개하고 정책을 고쳐요.</li></ul><p class="milestone"><span>2027.7 예정</span>헌장·조례·기본계획 마련</p><p class="source">원문 65~68쪽 · 시민주권정책과</p></div></details>
         </article>
@@ -74,15 +94,34 @@
           <dl class="facts"><div><dt>예산</dt><dd>약 53억 원<small>52억 6,810만 원 · 시비</small></dd></div><div><dt>주요 일정</dt><dd>인권헌장 2028.12 예정</dd></div></dl>
           <div class="opinions" aria-label="인권 찬반 의견 예시"><p><strong>찬성</strong><span>차별을 당한 사람이 도움받을 곳이 생겨요.</span></p><p><strong>반대</strong><span>비슷한 곳과 일이 겹치면 돈을 낭비할 수 있어요.</span></p></div>
           <section class="official" aria-labelledby="ask-2">
-            <h4 id="ask-2">담당자에게 물어보기</h4>
-            <ol aria-label="인권 담당자 질문 5개">
-              <li><strong>인권위원회에 어떤 조사·조치 권한을 줄 계획이며, 해당 부서는 그 조치를 어디까지 따라야 하나요?</strong></li>
-              <li>시청이나 산하기관이 신고 대상이 돼도, 위원회가 독립적으로 조사하고 판단할 수 있는 장치가 있나요?</li>
-              <li>시민이 피해를 신고하면 어떤 절차로 처리되고, 결과를 받기까지의 목표 기간은 얼마인가요?</li>
-              <li><strong>인권인지예산제에서 문제가 발견되면 실제 사업이나 예산을 어떻게 바꿀 계획인가요?</strong> 예상 적용 사례를 하나 설명해 주실 수 있나요?</li>
-              <li>센터에서 멀리 떨어진 시·군이나 농어촌에 사는 시민도 같은 수준으로 도움받을 수 있나요?</li>
-            </ol>
-            <div class="contact"><p class="contact-dept">인권평화과</p><p><span>위원회·조례·헌장 담당</span><a href="tel:0626134191">062-613-4191</a></p><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130046&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
+            <h4 id="ask-2">담당자에게 문의하기</h4>
+            <div class="inquiry-letter" id="inquiry-2">
+              <p class="inquiry-title"><span>제목</span><strong class="inquiry-subject">「대한민국 인권행정 표준모델도시 구현」 공약 확인 요청</strong></p>
+              <div class="inquiry-message">
+                <p>안녕하세요. 시민배심원단 7분임 김민주입니다.<br>아래 질문에 <strong>예·아니오 또는 숫자</strong>로 간단히 답변 부탁드립니다.</p>
+                <ol aria-label="인권 담당자 질문 6개">
+                  <li>세부 사업별 예산과 산출근거 자료가 있나요?</li>
+                  <li>신설 위원회·센터와 기존 기관 간 업무분장안이 있나요?</li>
+                  <li>위원회 설치와 업무 개시는 각각 몇 년 몇 월인가요?</li>
+                  <li>위원회에 인권침해 시정 권고 권한이 부여되나요?</li>
+                  <li>시정 권고의 이행 여부를 점검하는 절차가 마련되나요?</li>
+                  <li>시청·산하기관 조사 시 독립성을 보장하는 규정이 마련되나요?</li>
+                </ol>
+                <p>관련 자료가 있으면 함께 보내주시면 감사하겠습니다.</p>
+                <p>김민주 드림</p>
+              </div>
+            </div>
+            <div class="contact">
+              <p class="contact-dept">인권평화과</p>
+              <p><span>담당자</span><strong class="contact-name">김정님 주무관</strong></p>
+              <p><span>전화</span><a href="tel:0626134191">062-613-4191</a></p>
+              <p><span>이메일</span><a href="mailto:gjn3147@korea.kr">gjn3147@korea.kr</a></p>
+              <small>성명은 2026년 공개 행정자료의 동일 이메일로 확인 · 현재 보직은 직원 안내에서 성명 비공개</small>
+              <button class="copy-inquiry" type="button" aria-controls="inquiry-2">문의문 복사</button>
+              <span class="inquiry-status" role="status"></span>
+              <a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130046&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">부서 안내 ↗</a>
+              <a class="contact-source" href="https://www.corrections.go.kr/bbs/immigration/226/493577/download.do#page=22" target="_blank" rel="noopener noreferrer">성명 확인 자료 ↗</a>
+            </div>
           </section>
           <details id="policy-2"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li><b>인권위원회</b>를 만들고 인권을 지킬 약속을 정해요.</li><li>정책과 예산이 사람의 권리를 해치는지 미리 살펴요.</li><li><b>인권지원센터</b>를 두고 교육 등을 지원해요.</li></ul><p class="milestone"><span>2030.1 예정</span>인권위원회 출범</p><p class="source">원문 69~73쪽 · 인권평화과</p></div></details>
         </article>
@@ -93,21 +132,36 @@
           <dl class="facts"><div><dt>예산안</dt><dd>182억 원<small>국비 58 · 시비 24 · 민자 100억</small></dd></div><div><dt>기간</dt><dd>2026.7 ~ 2030.6</dd></div></dl>
           <div class="opinions" aria-label="통합 앱 찬반 의견 예시"><p><strong>찬성</strong><span>예약과 시민 제안을 한곳에서 하면 편해요.</span></p><p><strong>반대</strong><span>돈을 많이 들여도 사람들이 안 쓰면 낭비예요.</span></p></div>
           <section class="official" aria-labelledby="ask-3">
-            <h4 id="ask-3">담당자에게 물어보기</h4>
-            <ol aria-label="통합 앱 담당자 질문 5개">
-              <li><strong>‘모두의 AI’와 ‘슈퍼앱’은 각각 무슨 기능을 맡고, 시민은 두 서비스를 어떻게 이용하게 되나요?</strong></li>
-              <li><strong>개발비 외에 매년 유지·보수와 운영에 드는 비용은 얼마이며, 누가 부담하나요?</strong></li>
-              <li>어떤 개인정보와 이용기록을 수집하나요? 추가적인 데이터 활용에 동의하지 않아도 기본 서비스를 이용할 수 있나요?</li>
-              <li>검토 중인 <strong>데이터 배당은 어떤 수익을 재원으로, 누구에게 어떤 기준으로 지급하려는 건가요?</strong></li>
-              <li>참여한 민간기업이 사업에서 빠지거나 계약이 끝나도, 시가 서비스와 데이터를 계속 관리할 수 있나요?</li>
-            </ol>
-            <div class="contact"><p class="contact-dept">AI행정담당관</p><p><span>AI행정개발팀장 · 연결 문의</span><a href="tel:0626136220">062-613-6220</a></p><small>통합 앱 전담 번호는 미확인</small><a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130937&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">공식 연락처 확인 ↗</a></div>
+            <h4 id="ask-3">담당자에게 문의하기</h4>
+            <div class="inquiry-letter" id="inquiry-3">
+              <p class="inquiry-title"><span>제목</span><strong class="inquiry-subject">「시민참여형 AI 기반 통합 플랫폼 구축」 공약 문의</strong></p>
+              <div class="inquiry-message">
+                <p>안녕하세요. 시민배심원단 7분임 김민주입니다.<br>공약 검토를 위해 아래 사항에 간단히 답변 부탁드립니다.</p>
+                <ol aria-label="통합 앱 담당자 질문 5개">
+                  <li>‘모두의 AI’와 ‘슈퍼앱’의 핵심 기능은 각각 무엇인가요?</li>
+                  <li>총사업비 182억 원의 항목별 예산은 얼마인가요?</li>
+                  <li>민간투자 100억 원의 확보 현황과 미확보 시 대안은 무엇인가요?</li>
+                  <li>연간 운영·유지비는 얼마이며, 누가 부담하나요?</li>
+                  <li>‘데이터 배당’은 어떤 수익을 누구에게 나눠주는 건가요?</li>
+                </ol>
+                <p>감사합니다.<br>시민배심원단 7분임 김민주 드림</p>
+              </div>
+            </div>
+            <div class="contact">
+              <p class="contact-dept">AI행정담당관</p>
+              <p><span>담당자</span><strong class="contact-name">주무관 · 성명 비공개</strong></p>
+              <p><span>전화</span><a href="tel:0626136221">062-613-6221</a></p>
+              <p><span>이메일</span><a href="mailto:bl0815@korea.kr">bl0815@korea.kr</a></p>
+              <button class="copy-inquiry" type="button" aria-controls="inquiry-3">문의문 복사</button>
+              <span class="inquiry-status" role="status"></span>
+              <a class="contact-source" href="https://www.jeonnam-gwangju.go.kr/contentsView.do?deptid=6130937&amp;pageId=jngj15&amp;type=lnk" target="_blank" rel="noopener noreferrer">부서 안내 ↗</a>
+            </div>
           </section>
           <details id="policy-3"><summary>핵심 더 보기 <span class="chevron" aria-hidden="true">+</span></summary><div class="detail-body"><ul><li>시민이 <b>제안·평가</b>에 참여하는 AI 서비스를 만들어요.</li><li>여러 행정 서비스를 <b>통합 앱</b>으로 묶어요.</li><li>사업비는 AI 플랫폼 <b>72억</b>, 통합 앱 <b>110억</b>이에요.</li></ul><p class="milestone"><span>검토 중</span>데이터 수익을 시민에게 나누는 방식</p><p class="source">원문 74~76쪽 · AI행정담당관</p></div></details>
         </article>
       </section>
     </section>
-    <aside class="review call-guide" aria-labelledby="review-title"><div class="review-heading"><h2 id="review-title">전화할 때 첫마디</h2></div><p class="call-script">“시민배심원 7분임입니다. 이 공약의 실무 담당자와 통화하고 싶습니다.”</p><p class="contact-note">연락처: 2026.10.26 공식 직원전화 기준 · 이름 비공개로 업무명 표기</p></aside>
+    <aside class="review call-guide" aria-labelledby="review-title"><div class="review-heading"><h2 id="review-title">전화할 때 첫마디</h2></div><p class="call-script">“시민배심원단 7분임 김민주입니다. 이 공약의 실무 담당자와 통화하고 싶습니다.”</p><p class="contact-note">질의문·연락처: 시민배심원 제공 자료 · 이메일을 누르면 제목과 본문이 준비된 메일 작성창이 열립니다.</p></aside>
     <footer class="site-footer"><p>출처: 「7분임(시민주권)」 65~76쪽 · 인권위원회 일정은 원문 71·73쪽이 다름</p><p>자료 요약 · 공식 홈페이지 아님</p></footer>
   </main>
 
@@ -163,7 +217,36 @@ addEventListener('afterprint', () => {
   updateExpandButton();
 });
 
+document.querySelectorAll('.official').forEach(section => {
+  const subject = section.querySelector('.inquiry-subject').textContent.trim();
+  const body = [...section.querySelector('.inquiry-message').children].map(element => {
+    if (element.tagName === 'OL') {
+      return [...element.children].map((item, index) => `${index + 1}. ${item.innerText.trim()}`).join('\n');
+    }
+    return element.innerText.trim();
+  }).join('\n\n');
+  const emailLink = section.querySelector('a[href^="mailto:"]');
+  emailLink.href = `mailto:${emailLink.textContent.trim()}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  const copyButton = section.querySelector('.copy-inquiry');
+  const copyStatus = section.querySelector('.inquiry-status');
+  let copyResetTimer;
+  copyButton.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(`제목: ${subject}\n\n${body}`);
+      clearTimeout(copyResetTimer);
+      copyButton.textContent = '복사됨';
+      copyStatus.textContent = '제목과 문의문 전체를 복사했습니다.';
+      copyResetTimer = setTimeout(() => {
+        copyButton.textContent = '문의문 복사';
+        copyStatus.textContent = '';
+      }, 2500);
+    } catch {
+      copyStatus.textContent = '문의문을 직접 선택해 복사해 주세요.';
+    }
+  });
+});
+
 </script>
 </body>
 </html>
-11
